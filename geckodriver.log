@@ -901,44 +901,35 @@ Read port: 59671
 console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
 console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
 JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\USER\AppData\Local\Temp\rust_mozprofileCiVIAx\bookmarkbackups\bookmarks-2023-12-25.jsonlz4) because it does not exist
-1703529070055	geckodriver	INFO	Listening on 127.0.0.1:57101
-1703529073096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileZHXvvU"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1703529074089	Marionette	INFO	Marionette enabled
-Dynamically enable window occlusion 0
-1703529074259	Marionette	INFO	Listening on port 57114
-Read port: 57114
-1703529074759	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1703529088953	Marionette	INFO	Stopped listening on port 57114
-Dynamically enable window occlusion 1
-1703529284729	geckodriver	INFO	Listening on 127.0.0.1:57352
-1703529287756	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofilenA3Uj5"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1703529288450	Marionette	INFO	Marionette enabled
-Dynamically enable window occlusion 0
-1703529288601	Marionette	INFO	Listening on port 57364
-Read port: 57364
-1703529289159	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://unpkg.com/web-vitals/dist/web-vitals.iife.js, line 1: Script terminated by timeout at:
 m/webVitals@https://unpkg.com/web-vitals/dist/web-vitals.iife.js:1:1497
 n@https://unpkg.com/web-vitals/dist/web-vitals.iife.js:1:1358
 
-1703529318178	Marionette	INFO	Stopped listening on port 57364
+JavaScript warning: https://unpkg.com/web-vitals/dist/web-vitals.iife.js, line 1: Script terminated by timeout at:
+m/webVitals@https://unpkg.com/web-vitals/dist/web-vitals.iife.js:1:1497
+n@https://unpkg.com/web-vitals/dist/web-vitals.iife.js:1:1358
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1703545233684	Marionette	INFO	Stopped listening on port 59671
 Dynamically enable window occlusion 1
-1703529411360	geckodriver	INFO	Listening on 127.0.0.1:57526
-1703529414390	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile3tfQOk"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1703529415114	Marionette	INFO	Marionette enabled
-Dynamically enable window occlusion 0
-1703529415292	Marionette	INFO	Listening on port 57538
-Read port: 57538
-1703529415856	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1703529446694	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
-JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-PWJ3NQ, line 112: Script terminated by timeout at:
-Ta@https://www.googletagmanager.com/gtm.js?id=GTM-PWJ3NQ:112:507
+507
 Ua@https://www.googletagmanager.com/gtm.js?id=GTM-PWJ3NQ:113:22
 Nv/e/w.vtp_gtmOnSuccess@https://www.googletagmanager.com/gtm.js?id=GTM-PWJ3NQ:446:258
 
@@ -1203,8 +1194,9 @@ Read port: 57337
 1703543067670	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
 console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
 console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
-1703544367706	geckodriver	INFO	Listening on 127.0.0.1:58480
-1703544370731	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofiles7V7gE"
+1703545231230	Marionette	INFO	Stopped listening on port 57337
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofiles7V7gE"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 1703544371425	Marionette	INFO	Marionette enabled
