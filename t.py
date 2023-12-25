@@ -1,26 +1,23 @@
-import firebase_admin
-from firebase_admin import credentials, firestore
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import os
+import time
 
-# Use the service account credentials JSON file you downloaded from Firebase
-cred = credentials.Certificate('nba-history.json')
-firebase_admin.initialize_app(cred)
+options = webdriver.FirefoxOptions()
+#options.add_argument("--start-maximized")
+options.headless = True
 
+current_directory = os.path.dirname(os.path.realpath(__file__))
+driver_path = os.path.join(current_directory, 'geckodriver')
 
-# Access Firestore database
-db = firestore.client()
+driver = webdriver.Firefox(executable_path=driver_path, options = options)
+#driver.maximize_window()
+driver.implicitly_wait(10)
 
-# Reference to your collection
-collection_ref = db.collection('games-23-24')  # Replace 'your_collection_name' with your actual collection name
+driver.get("https://google.com")
 
-# Retrieve documents from the collection
-documents = collection_ref.stream()
+time.sleep(10)
 
-# Extract gameID field from each document and store in a list
-game_ids = [doc.to_dict().get('gameID') for doc in documents if doc.to_dict().get('gameID')]
-
-# Write the game IDs to a text file
-with open('game_ids.txt', 'w') as file:
-    for game_id in game_ids:
-        file.write(f"{game_id}\n")
-
-print(game_ids)
+driver.quit()

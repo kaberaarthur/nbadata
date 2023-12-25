@@ -18,11 +18,12 @@ db = firestore.client()
 
 options = webdriver.FirefoxOptions()
 #options.add_argument("--start-maximized")
+options.headless = True
 
 current_directory = os.path.dirname(os.path.realpath(__file__))
 driver_path = os.path.join(current_directory, 'geckodriver')
 
-driver = webdriver.Firefox(executable_path=driver_path)
+driver = webdriver.Firefox(executable_path=driver_path, options=options)
 #driver.maximize_window()
 driver.implicitly_wait(10)
 
@@ -36,21 +37,24 @@ with open('game_ids.txt', 'r') as file:
     # Read each line and append it to the list
     for line in file:
         lines_list.append(line.strip())
+        
 
 # Read Data from txt file
 history_list = []
 
 # Open the file in read mode
-with open('game_ids.txt', 'r') as history_file:
+with open('history.txt', 'r') as history_file:
     # Read each line and append it to the list
-    for line in file:
-        history_list.append(line.strip())
+    for pastgame in history_file:
+        history_list.append(pastgame.strip())     
+
 
 
 # LOOP Through the IDs
-for line in lines_list:
-    if line not in history_list:
+for oneline in lines_list:
+    if oneline not in history_list:
         # Start Scraping and Posting
+        
         gameID = line
 
         driver.get("https://www.basketball24.com/match/" + gameID + "/#/odds-comparison/home-away/ft-including-ot")
@@ -243,5 +247,5 @@ for line in lines_list:
         print("Document created with ID:", doc_ref.id)
 
         # Write the GameID to History
-        with open('history.txt', 'w') as history_file:
+        with open('history.txt', 'a+') as history_file:
             history_file.write(f"{gameID}\n")
